@@ -1,0 +1,6 @@
+{
+  "name": "default",
+  "version": "0.0.1",
+  "packageManager": "yarn@3.3.1",
+  "private": true
+}
