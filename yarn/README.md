@@ -16,7 +16,9 @@ With node 16.10+, corepack is included but you need to opt-in by running `corepa
 
 ## Global yarn
 
-When using yarn outside of a package (such as `yarn init`), corepack will default to the activated version. Set this version using (node 18.6+) `corepack prepare yarn@stable --activate`
+When using yarn outside of a package (such as `yarn init`), corepack will default to the activated version.
+
+Set this version using (node 18.6+) `corepack prepare yarn@stable --activate`
 
 ## Package yarn
 
@@ -28,6 +30,13 @@ When using yarn inside a package, corepack will check `package.json` for `packag
 }
 ```
 
-For existing packages, run `yarn set version stable` to update `package.json`
+For existing packages, run `yarn set version stable` to update package.json
 
-For new packages, run `yarn init -p` to generate a `package.json`
+For new packages, run `yarn init -p` to generate a package.json
+
+## References
+
+https://yarnpkg.com/getting-started/install
+
+https://github.com/nodejs/corepack
+
