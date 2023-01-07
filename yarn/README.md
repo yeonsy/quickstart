@@ -34,6 +34,24 @@ For existing packages, run `yarn set version stable` to update package.json
 
 For new packages, run `yarn init -p` to generate a package.json
 
+## .gitignore
+
+For zero-installs, make sure to commit `.pnp.*` and `.yarn/cache`
+
+A normal `.gitignore` looks like this:
+
+```
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+```
+
+See https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored for more details
+
 ## References
 
 https://yarnpkg.com/getting-started/install
