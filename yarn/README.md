@@ -52,6 +52,15 @@ A normal `.gitignore` looks like this:
 
 See https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored for more details
 
+## .gitattributes
+
+Specify yarn releases and plugin folders as binary content to avoid large diffs when they change by adding to `.gitattributes`:
+
+```
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
+```
+
 ## References
 
 https://yarnpkg.com/getting-started/install
